@@ -9,6 +9,7 @@ namespace SonOfCod.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<NewsletterRecipient> Recipients { get; set; }
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
