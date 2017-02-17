@@ -17,7 +17,7 @@ namespace SonOfCod.Models
         }
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
-
+        
         }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {

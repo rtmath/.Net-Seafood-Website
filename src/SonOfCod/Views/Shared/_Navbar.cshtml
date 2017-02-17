@@ -1,12 +1,23 @@
-﻿<h2>I'm a navbar</h2>
-
-@if (User.Identity.IsAuthenticated)
-{
-    <h2><a href="~/Admin/AdminPanel">@User.Identity.Name</a></h2>
-    <form asp-controller="Account" asp-action="LogOff" method="post">
-        <input type="submit" value="Sign Out" />
-    </form>
-}
-
-@Html.ActionLink("Login", "Login")
-@Html.ActionLink("Register a New Admin", "Register")
+﻿
+<div class="navbar">
+    <div class="navbar-title">
+        <a href="/">Son of Cod</a>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="nav-tab">
+            <a href="~/Admin/AdminPanel">@User.Identity.Name</a>
+        </div>
+        <div class="nav-tab">
+            <form asp-controller="Account" asp-action="LogOff" method="post">
+                <input type="submit" value="Sign Out" />
+            </form>
+        </div>
+    }
+    else
+    {
+        <div class="nav-tab">
+            @Html.ActionLink("Login", "Login")
+        </div>
+     }
+</div>

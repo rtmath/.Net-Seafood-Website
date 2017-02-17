@@ -1,0 +1,43 @@
+﻿html, body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: lightblue;
+    transition: all 0.3s;
+}
+a:visited {
+    text-decoration: none;
+    color: lightblue;
+}
+a:hover {
+    color: blue;
+}
+
+.navbar {
+    background-color: seagreen;
+    color: lightblue;
+    display: flex;
+    flex-direction: row;
+    line-height: 100px;
+    width: 100%;
+}
+
+.navbar-title {
+    font-size: 2em;
+    flex: 10%;
+}
+
+.nav-tab {
+    margin-right: 2%;
+}
+
+.nav-tab > a {
+    flex: 10%;
+}
+
+.nav-tab > form {
+    flex: 10%;
+}
