@@ -16,13 +16,40 @@ a:hover {
     color: blue;
 }
 
+.subnav {
+    background-color: darkseagreen;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    box-shadow: 2px 2px 2px black;
+    z-index: 1;
+}
+
+.sub-tab-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+}
+
+.sub-tab {
+    text-align: center;
+    width: 450px;
+    line-height: 40px;
+    background-color: blue;
+}
+
 .navbar {
     background-color: seagreen;
     color: lightblue;
+    position: fixed;
     display: flex;
     flex-direction: row;
     line-height: 100px;
     width: 100%;
+    z-index: 2;
+    box-shadow: 2px 2px 2px black;
 }
 
 .navbar-title {
@@ -40,4 +67,31 @@ a:hover {
 
 .nav-tab > form {
     flex: 10%;
+}
+
+.index-image-container, .footer-image-container {
+    width: 100%;
+    height: 450px;
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.index-image-container {
+   background-image: url("../images/harbor.jpg");
+}
+
+.footer-image-container {
+    background-image: url("../images/pencar-seafood-grill.jpg");
+}
+
+.index-content {
+    position: inherit;
+    background-color: darkseagreen;
+    color: white;
+}
+
+.render-body {
+    height: 150px;
 }
