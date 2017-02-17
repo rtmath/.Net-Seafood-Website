@@ -73,11 +73,27 @@ a:hover {
 }
 
 .nav-tab > span:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 .nav-tab > form {
     flex: 10%;
+    height: 100%;
+}
+
+.nav-tab > form > input {
+    margin-top: 4px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2em;
+    padding: 0;
+    transition: 0.3s all;
+}
+
+.nav-tab > form > input:hover {
+    cursor: pointer;
+    color: white;
 }
 
 .index-image-container, .footer-image-container {
@@ -91,6 +107,12 @@ a:hover {
 
 .index-image-container {
    background-image: url("../images/harbor.jpg");
+    filter: grayscale(50%) brightness(105%);
+    transition: 0.5s all;
+}
+
+.index-image-container:hover {
+   filter: grayscale(0%);
 }
 
 .footer-image-container {
@@ -105,4 +127,8 @@ a:hover {
 
 .render-body {
     height: 100px;
+}
+
+.newsletter-link {
+    text-align: center;
 }
