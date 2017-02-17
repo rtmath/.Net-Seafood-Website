@@ -46,10 +46,6 @@ namespace SonOfCod
                     name: "default",
                     template: "{controller=Account}/{action=Index}/{id?}");
             });
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("404 Page Not Found");
-            });
         }
     }
 }

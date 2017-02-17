@@ -5,8 +5,8 @@
     </div>
     @if (User.Identity.IsAuthenticated)
     {
-        <div class="nav-tab">
-            <a href="~/Admin/AdminPanel">@User.Identity.Name</a>
+        <div id="admin-tab" class="nav-tab">
+            <span>@User.Identity.Name</span>
         </div>
         <div class="nav-tab">
             <form asp-controller="Account" asp-action="LogOff" method="post">
@@ -17,7 +17,7 @@
     else
     {
         <div class="nav-tab">
-            @Html.ActionLink("Login", "Login")
+            <a href="/Account/Login">Login</a>
         </div>
      }
 </div>

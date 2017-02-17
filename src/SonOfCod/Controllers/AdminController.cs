@@ -11,11 +11,6 @@ namespace SonOfCod.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        public IActionResult AdminPanel()
-        {
-            return View();
-        }
-
         public IActionResult MailingList()
         {
             return View(db.Recipients.ToList());

@@ -14,13 +14,16 @@ a:visited {
 }
 a:hover {
     color: blue;
+    cursor: pointer;
 }
 
 .subnav {
+    display: none;
     background-color: darkseagreen;
     width: 100%;
     height: 150px;
     position: fixed;
+    opacity: 0.9;
     box-shadow: 2px 2px 2px black;
     z-index: 1;
 }
@@ -35,9 +38,9 @@ a:hover {
 
 .sub-tab {
     text-align: center;
-    width: 450px;
     line-height: 40px;
-    background-color: blue;
+    font-size: 16px;
+    margin-right: 20px;
 }
 
 .navbar {
@@ -61,8 +64,16 @@ a:hover {
     margin-right: 2%;
 }
 
-.nav-tab > a {
+.nav-tab > span {
     flex: 10%;
+}
+
+.nav-tab > span {
+    font-size: 1.8em;
+}
+
+.nav-tab > span:hover {
+    cursor: default;
 }
 
 .nav-tab > form {
@@ -93,5 +104,5 @@ a:hover {
 }
 
 .render-body {
-    height: 150px;
+    height: 100px;
 }

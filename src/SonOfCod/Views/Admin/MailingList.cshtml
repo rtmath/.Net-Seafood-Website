@@ -2,7 +2,7 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    <h2>These guests are enrolled for our newsletter:</h2>
+    <h2>These recipients are enrolled for our newsletter:</h2>
 
     @foreach (var user in Model)
     {
