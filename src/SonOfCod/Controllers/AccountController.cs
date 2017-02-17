@@ -74,5 +74,10 @@ namespace SonOfCod.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index");
         }
+
+        public IActionResult AdminPanel()
+        {
+            return View();
+        }
     }
 }

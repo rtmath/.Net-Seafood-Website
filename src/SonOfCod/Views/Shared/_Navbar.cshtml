@@ -2,7 +2,7 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    <h2>Hey, you're logged in now!</h2>
+    <h2><a href="~/Admin/AdminPanel">@User.Identity.Name</a></h2>
     <form asp-controller="Account" asp-action="LogOff" method="post">
         <input type="submit" value="Sign Out" />
     </form>

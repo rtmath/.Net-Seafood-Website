@@ -1,0 +1,19 @@
+﻿@model List<SonOfCod.Models.NewsletterRecipient>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>These guests are enrolled for our newsletter:</h2>
+
+    @foreach (var user in Model)
+    {
+        <div>
+            @user.Name | @user.Email
+        </div>
+
+    }
+}
+else
+{
+    <h2>You do not have permission to view this page</h2>
+
+}

@@ -1,0 +1,9 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <h2>Welcome to the Admin Panel!</h2>
+
+    <a href="~/Admin/ViewNewsletterList">View Newsletter Recipients</a>
+    <a>Add a New Admin Account</a>
+} else {
+    <h2>You do not have permission to view this page</h2>
+}
