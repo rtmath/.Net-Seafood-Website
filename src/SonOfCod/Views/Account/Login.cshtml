@@ -1,0 +1,16 @@
+﻿@using SonOfCod.ViewModels
+
+@model LoginViewModel
+
+<h2>Log in with your account</h2>
+<hr />
+<form asp-controller="Account" asp-action="Login" method="post">
+
+    <label>Email</label>
+    <input name="Email" />
+
+    <label>Password</label>
+    <input type="password" name="Password" />
+
+    <input type="submit" value="Log in" />
+</form>

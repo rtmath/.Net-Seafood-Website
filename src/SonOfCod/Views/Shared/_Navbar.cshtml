@@ -1,3 +1,12 @@
 ﻿<h2>I'm a navbar</h2>
 
-@Html.ActionLink("Register", "Register")
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Hey, you're logged in now!</h2>
+    <form asp-controller="Account" asp-action="LogOff" method="post">
+        <input type="submit" value="Sign Out" />
+    </form>
+}
+
+@Html.ActionLink("Login", "Login")
+@Html.ActionLink("Register a New Admin", "Register")
