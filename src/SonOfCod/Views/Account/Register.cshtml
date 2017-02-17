@@ -1,0 +1,18 @@
+﻿@using SonOfCod.ViewModels
+
+@model RegisterViewModel
+
+<h2>Register a new user</h2>
+<hr />
+<form asp-controller="Account" asp-action="Register" method="post">
+    <label>Email</label>
+    <input name="Email" />
+
+    <label>Password</label>
+    <input name="Password" />
+
+    <label>ConfirmPassword</label>
+    <input name="ConfirmPassword" />
+
+    <input type="submit" value="Register" />
+</form>
