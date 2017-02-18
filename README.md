@@ -4,7 +4,9 @@
 
 # Description
 
-_This is an independent C# project for a fake seafood company called Son of Cod, using ASP.NET Authentication. Anonymous users can see the home index, newsletter, and signup to receive newsletter. Admins can create login accounts and view all users who have enrolled for a newsletter._
+_This is an independent C# project for a fake seafood company called Son of Cod, using ASP.NET Authentication. Anonymous users can see the home index, newsletter, and signup to receive newsletter. Admins can create login accounts and view all users who have enrolled for a newsletter. 
+
+There is also a Tests project included in this repo with unit testing for each of the controllers._
 
 ## Requirements
   * Visual Studio
