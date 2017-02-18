@@ -1,30 +1,43 @@
-﻿html, body {
+﻿/*
+--color variables--
+blue: #177E89
+darkblue: #084C61
+red: #DB3A34
+yellow: #FFC857
+brown: #323031
+*/
+
+html, body {
     margin: 0;
+    min-width: 1000px;
+    background-color: #084C61;
+    color: white;
 }
+
 
 a {
     text-decoration: none;
     font-size: 1.8em;
-    color: lightblue;
+    color: #FFC857;
     transition: all 0.3s;
 }
 a:visited {
     text-decoration: none;
-    color: lightblue;
+    color: #FFC857;
 }
 a:hover {
-    color: blue;
+    color: #DB3A34;
     cursor: pointer;
 }
 
 .subnav {
-    display: none;
-    background-color: darkseagreen;
+    background-color: #FFC857;
     width: 100%;
+    min-width: 1000px;
     height: 150px;
     position: fixed;
     opacity: 0.9;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px #084C61;
     z-index: 1;
 }
 
@@ -43,21 +56,31 @@ a:hover {
     margin-right: 20px;
 }
 
+.sub-tab > a {
+    color: #323031;
+}
+
+.sub-tab > a:hover {
+    color: #DB3A34;
+}
+
 .navbar {
-    background-color: seagreen;
+    background-color: #323031;
     color: lightblue;
     position: fixed;
     display: flex;
     flex-direction: row;
     line-height: 100px;
     width: 100%;
+    min-width: 1000px;
     z-index: 2;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px #084C61;
 }
 
 .navbar-title {
     font-size: 2em;
     flex: 10%;
+    margin-left: 15px;
 }
 
 .nav-tab {
@@ -98,17 +121,18 @@ a:hover {
 
 .index-image-container, .footer-image-container {
     width: 100%;
-    height: 450px;
+    height: 700px;
     background-color: lightblue;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: 100% 100%;
+
 }
 
 .index-image-container {
-   background-image: url("../images/harbor.jpg");
-    filter: grayscale(50%) brightness(105%);
+   background-image: url("../images/ships-in-harbor.jpg");
+    filter: grayscale(90%) brightness(105%);
     transition: 0.5s all;
+    background-attachment: fixed;
 }
 
 .index-image-container:hover {
@@ -121,7 +145,7 @@ a:hover {
 
 .index-content {
     position: inherit;
-    background-color: darkseagreen;
+    background: #084C61;
     color: white;
 }
 
@@ -129,6 +153,10 @@ a:hover {
     height: 100px;
 }
 
-.newsletter-link {
+.content-push {
+    height: 50px;
+}
+
+.center-content {
     text-align: center;
 }

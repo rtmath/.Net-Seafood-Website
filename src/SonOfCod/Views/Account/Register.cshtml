@@ -2,24 +2,33 @@
 
 @model RegisterViewModel
 
-@if (User.Identity.IsAuthenticated)
-{
-    <h2>Register a new user</h2>
-    <hr />
-    <form asp-controller="Account" asp-action="Register" method="post">
-        <label>Email</label>
-        <input name="Email" />
+<div class="content-push">
 
-        <label>Password</label>
-        <input type="password" name="Password" />
+</div>
 
-        <label>ConfirmPassword</label>
-        <input type="password" name="ConfirmPassword" />
 
-        <input type="submit" value="Register" />
-    </form>
-}
-else
-{
-    <h2>You do not have permission to view this page</h2>
-}
+<div class="center-content">
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h2>Register a new user</h2>
+        <hr />
+        <form asp-controller="Account" asp-action="Register" method="post">
+            <label>Email</label>
+            <input name="Email" />
+
+            <label>Password</label>
+            <input type="password" name="Password" />
+
+            <label>ConfirmPassword</label>
+            <input type="password" name="ConfirmPassword" />
+
+            <input type="submit" value="Register" />
+        </form>
+    }
+    else
+    {
+        <h2>You do not have permission to view this page</h2>
+    }
+
+</div>
