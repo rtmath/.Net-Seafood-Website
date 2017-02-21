@@ -31,6 +31,7 @@ a:hover {
 }
 
 .subnav {
+    display: none;
     background-color: #FFC857;
     width: 100%;
     min-width: 1000px;
