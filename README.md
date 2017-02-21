@@ -20,8 +20,8 @@ _There is also a Tests project included in this repo with unit testing for each 
   * Navigate to where you cloned this repo with Powershell and run the following commands:
     * dotnet ef migrations add InitialClone
     * dotnet ef database update
-  * In SSMS, create an Admin account for yourself in the AspNetUsers table to be able to access Admin functionality
   * In Visual Studio, hit F5 to launch the project
+  * The default admin username/password is **admin@sonofcod.com** and **Abc!23**
   * Enjoy!
 
 ## License
