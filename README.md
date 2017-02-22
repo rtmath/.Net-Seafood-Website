@@ -21,7 +21,7 @@ _There is also a Tests project included in this repo with unit testing for each 
     * dotnet ef migrations add InitialClone
     * dotnet ef database update
   * In Visual Studio, hit F5 to launch the project
-  * The default admin username/password is **admin@sonofcod.com** and **Abc!23**
+  * Import the SQL data included in this repo to seed SSMS with an admin account. The default admin username/password is **admin@sonofcod.com** and **Abc!23**
   * Enjoy!
 
 ## License
